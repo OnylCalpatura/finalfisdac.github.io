@@ -17,14 +17,20 @@ GLOBAL
   list-style: none;
 }
 html {
-  width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
+
+/*body {
+  background-image: url("assets/home/mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}*/
 
 h1 {
   color: #4E73DD;
   font-size: 37px;
+  font-weight: 700;
   line-height: 56px;
 }
 h2 {
@@ -111,7 +117,7 @@ HOME
   width: 100%;
 }
 .home-wrapper h1 {
-  margin: 48px 32px 0px;
+  margin: 36px 32px 0px;
 
   font-weight: 700;
 }
@@ -124,11 +130,9 @@ HOME
 /* Church image */
 .church-image {
   width: 100%;
-
-  background-repeat: no-repeat;
 }
 .church-image img {
-  margin: 48px 36px 0px;
+  margin: 36px 36px 0px;
 }
 
 /* Stream button */
@@ -197,23 +201,28 @@ HOME
 }
 
 /* Background */
-.rec1-home {
+.rec1 {
   left: 188px;
-  top: -44px;
+  top: -52px;
 }
-.rec2-home {
+.rec2 {
   left: 14px;
-  top: 322px;
+  top: 310px;
 }
-.rec3-home {
+.rec3 {
+  width: 100%;
   left: 118px;
-  top: 390px;
+  top: 365px;
 }
-.rec4-home {
-  left: -252px;
-  top: 616px;
+.rec4 {
+  left: -206px;
+  top: 594px;
 }
-
+.bottomgradient {
+  display: none;
+  bottom: 0;
+  width: 100%;
+}
 
 
 
