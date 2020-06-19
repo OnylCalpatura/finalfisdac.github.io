@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*
-======
 GLOBAL
-======
 */
 * {
   margin: 0;
@@ -18,14 +16,7 @@ GLOBAL
 }
 html {
   overflow-x: hidden;
-  overflow-y: hidden;
 }
-
-/*body {
-  background-image: url("assets/home/mobile.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}*/
 
 h1 {
   color: #4E73DD;
@@ -81,10 +72,14 @@ a:visited {text-decoration: none; color: none;}
   background-repeat: no-repeat;
 }
 
+
 /*
-=======
+======
+MOBILE
+======
+*/
+/*
 HEADING
-=======
 */
 .banner-wrapper {
   padding: 20px 24px;
@@ -104,11 +99,11 @@ HEADING
 }
 
 /*
-====
 HOME
-====
 */
+/* CONTENT */
 .home-wrapper {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,21 +123,22 @@ HOME
 }
 
 /* Church image */
-.church-image {
+.church-image-m {
   width: 100%;
 }
-.church-image img {
+.church-image-m img {
   margin: 36px 36px 0px;
 }
 
-/* Stream button */
-.stream-wrapper {
+/* BUTTONS */
+.button-wrapper {
   margin-top: 24px;
   width: 100%;
 }
+
+/* Stream */
 .stream {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0px 24px;
 
   color: white;
   background-image: linear-gradient(90deg, #45e355, #55ee88);
@@ -152,12 +148,12 @@ HOME
   transition-duration: 0.15s, 0.2s, 0.25s;
   transition-timing-function: ease;
 }
-.stream:hover {
+.stream:hover, .stream:focus {
   transform: translateY(-6px);
 
   box-shadow: 0px 6px 24px rgba(69, 227, 85, 0.5);
 }
-.stream:active{
+.stream:active {
   box-shadow: 0px 3px 12px rgba(69, 227, 85, 0.75);
 
   transform: translateY(-3px);
@@ -169,15 +165,9 @@ HOME
   width: 10px;
   height: 12px;
 }
-
-/* Programme button */
-.programme-wrapper {
-  margin-top: 16px;
-  width: 100%;
-}
+/* Programme */
 .programme {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 16px 24px 0px;
 
   color: #5A678E;
   border-color: #5A678E;
@@ -186,7 +176,7 @@ HOME
   transition-duration: 0.15s, 0.15s, 0.2s, 0.25s;
   transition-timing-function: ease;
 }
-.programme:hover {
+.programme:hover, .programme:focus {
   transform: translateY(-6px);
 
   color: white;
@@ -200,32 +190,148 @@ HOME
   transition-duration: 0s;
 }
 
-/* Background */
-.rec1 {
-  left: 188px;
-  top: -52px;
+/* BACKGROUND */
+.gradient-mobile {
+  z-index: -99;
+  top: 0;
+  right: 0;
+
+  height: 62px;
+  width: 56.5333%;
 }
-.rec2 {
-  left: 14px;
+.gradient-mobile img {
+  width: 100%;
+  height: 100%;
+}
+.rec1-m {
   top: 310px;
+  left: 3.73%;
+
+  width: 11.73%;
 }
-.rec3 {
-  width: 100%;
+.rec2-m {
+  top: 356px;
+  right: 0px;
   left: 118px;
-  top: 365px;
+
 }
-.rec4 {
-  left: -206px;
-  top: 594px;
+.rec3-m {
+  top: 612px;
+  left: 0px;
+
+  width: 60%;
 }
-.bottomgradient {
+
+/*
+TABLET FOUNDATION
+*/
+.church-image {
   display: none;
-  bottom: 0;
-  width: 100%;
+}
+.gradient-tablet {
+  display: none;
+}
+.rec1-t, .rec2-t, .rec3-t, .rec4-t {
+  display: none;
 }
 
 
 
+/*
+======
+TABLET
+======
+*/
+@media only screen and (min-width: 768px){
+
+  /*
+  HOME
+  */
+  .home-wrapper {
+    align-items: flex-start;
+    top: 50%;
+    left: 10%;
+
+    text-align: left;
+
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .home-wrapper h1 {
+    margin: 0px;
+    width: 310px;
+  }
+  .home-wrapper h5 {
+    margin: 24px 0px 0px 0px;
+    width: 328px;
+  }
+
+  /* BUTTONS */
+  .button-wrapper {
+    margin: 24px 0px;
+
+    width: auto;
+  }
+  .stream {
+    margin: 0px;
+  }
+  .programme {
+    margin: 16px 0px 0px 0px;
+  }
+
+/* Church */
+  .church-image-m {
+    display: none;
+  }
+  .church-image {
+    position: absolute;
+    display: block;
+    z-index: -99;
+    right: -232px;
+    top: 50%;
+
+    background-image: url(assets/home/church.svg);
+    width: 708px;
+    height: 304px;
+
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* BACKGROUND */
+  .rec1-m, .rec2-m, .rec3-m {
+    display: none;
+  }
+
+  .gradient-mobile {
+    display: none;
+  }
+  .gradient-tablet {
+    display: block;
+    z-index: -99;
+    top: -22px;
+    right: -140px;
+  }
+  .rec1-t, .rec2-t, .rec3-t, .rec4-t {
+    display: block;
+  }
+  .rec1-t {
+    top: 70px;
+    left: 21.48%;
+  }
+  .rec2-t {
+    top: 198px;
+    left: 3.13%;
+  }
+  .rec3-t {
+    top: 591px;
+    left: 36.95%;
+  }
+  .rec4-t {
+    top: 668px;
+    left: -10.16%;
+  }
+}
 
 
 
