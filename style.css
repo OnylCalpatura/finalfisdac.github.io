@@ -197,7 +197,6 @@ HOME
   right: 0;
 
   height: 62px;
-  width: 56.5333%;
 }
 .gradient-mobile img {
   width: 100%;
@@ -249,13 +248,11 @@ TABLET
   */
   .home-wrapper {
     align-items: flex-start;
-    top: 50%;
+    position: absolute;
+    top: 279px;
     left: 10%;
 
     text-align: left;
-
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
   }
   .home-wrapper h1 {
     margin: 0px;
@@ -286,16 +283,15 @@ TABLET
   .church-image {
     position: absolute;
     display: block;
-    z-index: -99;
-    right: -232px;
-    top: 50%;
+    z-index: -98;
+    right: -323px;
+    left: 50%;
+    top: 279px;
 
     background-image: url(assets/home/church.svg);
+    background-repeat: no-repeat;
     width: 708px;
     height: 304px;
-
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
   }
 
   /* BACKGROUND */
