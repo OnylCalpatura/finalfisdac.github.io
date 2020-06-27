@@ -13,7 +13,6 @@ GLOBAL=====================================================
   font-weight: 400;
   text-decoration: none;
   list-style: none;
-  overflow-y: hidden;
 }
 html {
   overflow-x: hidden;
