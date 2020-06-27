@@ -11,49 +11,84 @@
   </head>
 
   <body>
+<!---
+==========
+FOUNDATION
+==========
+-->
+    <!-- === FULL === -->
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <a href="index.html" alt="Logotype"><img src="assets/logo/logotype-dark.svg" id="logotype-dark"></a>
 
-    <!---
-    =================
-    MOBILE FOUNDATION
-    =================
-    -->
+      <ul class="navmenu lightnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="directions.html">Directions</a></li>
+        <li><a href="contact.html" class="button">Contact Us</a></li>
+
+        <a href="https://www.youtube.com/channel/UCZbFXTMuBxKXKm8MaP0NlYA" target="_blank" id="yt">
+          <img src="assets/logo/yt light.svg" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/fisdac/?hl=en" target="_blank" id="ig">
+          <img src="assets/logo/ig light.svg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/ficadventist" target="_blank" id="fb">
+          <img src="assets/logo/fb light.svg" alt="Facebook">
+        </a>
+      </ul>
+    </nav>
+
+
+    <!-- === MOBILE === -->
     <!-- HEADER -->
     <header class="banner-wrapper">
       <div class="banner-content">
-        <a href="#" class="logotype-dark"><img src="assets/logo/logotype-dark.svg" alt="Logo"></a>
-        <a href="#" class="menu-btn"><img src="assets/menu.svg" alt="Menu"></a>
+        <a href="#" id="logotype-dark"><img src="assets/logo/logotype-dark.svg" alt="Logo"></a>
+        <a href="#" id="menu-btn"><img src="assets/menu.svg" alt="Menu"></a>
       </div>
     </header>
 
     <!-- CONTENT -->
     <div class="home-wrapper">
       <h1>A vibrant church in London</h1>
-      <h5>Welcome to the Filipino International Seventh-day Adventist Church. Join us in worship every Saturday morning at 11:40.</h5>
+      <h5 id="smallh5"> Welcome to the Filipino International Seventh-day Adventist Church. Join us in worship every Saturday morning at 11:40.</h5>
+      <h5 id="largeh5">
+        Welcome to the Filipino International Seventh-day Adventist Church.<br>
+        Join us in worship every Saturday morning at 11:40.
+      </h5>
 
-      <div class="church-image-m"><img src="assets/home/church.svg"></div>
+      <div id="church-image-m"><img src="assets/home/church.svg"></div>
 
       <div class="button-wrapper">
-        <a href="https://www.youtube.com/channel/UCZbFXTMuBxKXKm8MaP0NlYA/videos?view=2&flow=grid" target="_blank" class="button stream"><img src="assets/home/play.svg" alt="Play button" class="playsvg">Watch Stream</a>
-        <a href="https://drive.google.com/drive/folders/1EbK4kqPKlklJSwrHNUYy-zWjgIz53-BJ?usp=sharing" target="_blank" class=" button programme">View Programme</a>
+        <a href="https://www.youtube.com/channel/UCZbFXTMuBxKXKm8MaP0NlYA/videos?view=2&flow=grid" target="_blank" class="button" id="stream"><img src="assets/home/play.svg" alt="Play button" id="playsvg">Watch Stream</a>
+        <a href="https://drive.google.com/drive/folders/1EbK4kqPKlklJSwrHNUYy-zWjgIz53-BJ?usp=sharing" target="_blank" class="button" id="programme">View Programme</a>
       </div>
     </div>
 
     <!-- BACKGROUND -->
-    <div class="bg gradient-mobile"><img src="assets/home/gradient mobile.svg"></div>
-    <img src="assets/rectangles/mobile/rec1.svg" class="bg rec1-m">
-    <img src="assets/rectangles/mobile/rec2.svg" class="bg rec2-m">
-    <img src="assets/rectangles/mobile/rec3.svg" class="bg rec3-m">
+    <div class="bg" id="gradient-mobile"><img src="assets/home/gradient mobile.svg"></div>
+    <img src="assets/home/rectangles/mobile/rec1.svg" class="bg" id="rec1-m">
+    <img src="assets/home/rectangles/mobile/rec2.svg" class="bg" id="rec2-m">
+    <img src="assets/home/rectangles/mobile/rec3.svg" class="bg" id="rec3-m">
 
-    <!---
-    =================
-    TABLET FOUNDATION
-    =================
-    -->
-    <div class="church-image"></div>
-    <div class="bg gradient-tablet"><img src="assets/home/gradient tablet.svg"></div>
-    <img src="assets/rectangles/tablet/rec1.svg" class="bg rec1-t">
-    <img src="assets/rectangles/tablet/rec2.svg" class="bg rec2-t">
-    <img src="assets/rectangles/tablet/rec3.svg" class="bg rec3-t">
-    <img src="assets/rectangles/tablet/rec4.svg" class="bg rec4-t">
+    <!--- TABLET BACKGROUND -->
+    <div id="church-image"><img src="assets/home/church.svg"></div>
+    <div class="bg" id="gradient-tablet"><img src="assets/home/gradient tablet.svg"></div>
+    <img src="assets/home/rectangles/tablet/rec1.svg" class="bg" id="rec1-t">
+    <img src="assets/home/rectangles/tablet/rec2.svg" class="bg" id="rec2-t">
+    <img src="assets/home/rectangles/tablet/rec3.svg" class="bg" id="rec3-t">
+    <img src="assets/home/rectangles/tablet/rec4.svg" class="bg" id="rec4-t">
+    <img src="assets/home/rectangles/tablet/rec5.svg" class="bg" id="rec5-t">
+
+    <!--- FULL BACKGROUND -->
+    <div class="bg" id="gradient-full"><img src="assets/home/gradient full.svg"></div>
+    <img src="assets/home/rectangles/full/rec1.svg" class="bg" id="rec1-f">
+    <img src="assets/home/rectangles/full/rec2.svg" class="bg" id="rec2-f">
+    <img src="assets/home/rectangles/full/rec3.svg" class="bg" id="rec3-f">
+    <img src="assets/home/rectangles/full/rec4.svg" class="bg" id="rec4-f">
+
 
   </body>
+</html>
