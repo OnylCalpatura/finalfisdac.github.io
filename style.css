@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*
-GLOBAL=====================================================
+GLOBAL ===================================================
 */
 * {
   margin: 0;
@@ -25,7 +25,9 @@ h1 {
   line-height: 56px;
 }
 h2 {
+  color: #4E73DD;
   font-size: 29px;
+  font-weight: 700;
   line-height: 45px;
 }
 h3 {
@@ -72,23 +74,8 @@ a:visited {text-decoration: none; color: none;}
   background-repeat: no-repeat;
 }
 
-/*
-HOME=====================================================
-*/
-
-/*
-======
-MOBILE
-======
-*/
 @media only screen and (min-width: 320px) {
-  nav, #church-image, #gradient-tablet, #gradient-full,
-  #rec1-t, #rec2-t, #rec3-t, #rec4-t, #rec5-t,
-  #rec1-f, #rec2-f, #rec3-f, #rec4-f {
-    display: none;
-  }
-
-  /* HEADING */
+  /* --GLOBAL-- */
   .banner-wrapper {
     padding: 20px 24px;
   }
@@ -102,12 +89,25 @@ MOBILE
     width: 90px;
     height: 14px;
   }
-  #menu-button img {
+
+  /* --NONE-- */
+  nav, #church-image, #gradient-tablet, #gradient-full, #homerec1-768, #homerec2-768, #homerec3-768, #homerec4-768, #homerec1-1024, #homerec1-1440, #homerec2-1440, #homerec3-1440, #homerec4-1440,
+
+  .directions-title h1, .directions-title h5, .directions-title img, #directionsrec1-768, #directionsrec2-768, #directionsrec3-768, #directionsrec4-768, #directionsrec1-1024, #directionsrec2-1024, #directionsrec3-1024, #directionsrec4-1024, #directionsrec1-1440, #directionsrec2-1440, #directionsrec3-1440, #directionsrec4-1440, #directionsrec5-1440
+  {
+    display: none;
+  }
+
+  /*
+  HOME =====================================================
+  */
+  /* --HEADING-- */
+  #lightmenu-btn img {
     width: 14px;
     height: 20px;
   }
 
-  /* CONTENT */
+  /* --CONTENT-- */
   .home-wrapper {
     position: absolute;
     display: flex;
@@ -115,12 +115,9 @@ MOBILE
     align-items: center;
 
     text-align: center;
-    width: 100%;
   }
   .home-wrapper h1 {
     margin: 36px 32px 24px;
-
-    font-weight: 700;
   }
   #smallh5  {
     margin: 0px 24px;
@@ -130,22 +127,20 @@ MOBILE
   #largeh5 {
     display: none;
   }
-
   /* Church image */
-  #church-image-m {
+  #church-image-375 {
     margin: 36px 36px 0px;
   }
-  #church-image-m img {
+  #church-image-375 img {
     width: 100%;
 
   }
 
-  /* BUTTONS */
+  /* --BUTTONS-- */
   .button-wrapper {
     margin-top: 48px;
     width: 100%;
   }
-
   /* Stream */
   #stream {
     margin: 0px 24px;
@@ -200,7 +195,7 @@ MOBILE
     transition-duration: 0s;
   }
 
-  /* BACKGROUND */
+  /* --BACKGROUND-- */
   #gradient-mobile {
     z-index: -99;
     top: 0;
@@ -212,39 +207,131 @@ MOBILE
     width: 100%;
     height: 100%;
   }
-  #rec1-m {
+  #homerec1-375 {
     top: 310px;
     left: 3.73%;
 
     width: 11.73%;
   }
-  #rec2-m {
+  #homerec2-375 {
     top: 356px;
     right: 0px;
     left: 118px;
 
   }
-  #rec3-m {
+  #homerec3-375 {
     top: 612px;
     left: 0px;
 
     width: 60%;
   }
+
+  /*
+  DIRECTIONS ===============================================
+  */
+  /* --HEADING-- */
+  #darkmenu-btn img {
+    width: 14px;
+    height: 20px;
+  }
+
+  /* --CONTENT-- */
+  .directions-wrapper {
+    width: 100%;
+  }
+  .directions-wrapper > h5 {
+    color: #4e73dd;
+  }
+
+  .directions-title {
+    margin: 16px 0px 0px 10%;
+  }
+  .directions-title h1, .directions-title h2 {
+    margin-bottom: 24px;
+  }
+
+  /* directions cards*/
+  .directions-cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .address-click {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom:  8px;
+  }
+  .address-click h6 {
+    color: #919AA4;
+    font-style: italic;
+    text-align: right;
+  }
+
+  .directions-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 24px 0px;
+
+    width: 100%;
+    max-width: 552px;
+  }
+  .directions-cards > div, .address {
+    margin-bottom: 16px;
+    padding: 24px;
+
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.05);
+  }
+  .directions-cards h5 {
+    color: #4E73DD;
+    font-weight: 500;
+  }
+
+  .address {
+    transition: transform 0.1s ease;
+    cursor: pointer;
+  }
+  .address:active {
+    transform: translateY(2px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.075);
+    background-color: #FCFCFC;
+    transition-duration: 0s;
+  }
+  .tube h5, .bus h5 {
+    margin-bottom: 8px;
+  }
+
+  /* --BACKGROUND-- */
+  #directionsrec1-375 {
+    top: 95px;
+    left: 55.47%;
+  }
+  #directionsrec2-375 {
+    top: 336px;
+    left: -2.67%;
+  }
+  #directionsrec3-375 {
+    top: 583px;
+    left: 39.47%;
+  }
 }
 
-
-
-/*
-======
-TABLET
-======
-*/
 @media only screen and (min-width: 768px) {
-  #church-image-m, #gradient-mobile , #rec1-m, #rec2-m, #rec3-m {
+  /* --NONE-- */
+  #church-image-375, #gradient-mobile , #homerec1-375, #homerec2-375, #homerec3-375,
+
+  .directions-title h2, #directionsrec1-375, #directionsrec2-375,#directionsrec3-375
+  {
     display: none;
   }
 
-  /* CONTENT */
+  /*
+  HOME =====================================================
+  */
+  /* --CONTENT-- */
   .home-wrapper {
     align-items: flex-start;
     left: 10%;
@@ -263,7 +350,6 @@ TABLET
     width: 328px;
   }
 
-  /* BUTTONS */
   .button-wrapper {
     margin: 24px 0px;
 
@@ -275,7 +361,6 @@ TABLET
   #programme {
     margin: 16px 0px 0px 0px;
   }
-
   /* Church */
   #church-image {
     position: absolute;
@@ -293,48 +378,109 @@ TABLET
     width: 100%;
   }
 
-  /* BACKGROUND */
+  /* --BACKGROUND-- */
   #gradient-tablet {
     display: block;
     z-index: -99;
     top: -22px;
     right: -180px;
   }
-  #rec1-t {
+  #homerec1-768 {
     display: block;
     top: 70px;
     left: 21.48%;
   }
-  #rec2-t {
+  #homerec2-768 {
     display: block;
     top: 198px;
     left: 3.13%;
   }
-  #rec3-t {
+  #homerec3-768 {
     display: block;
     top: 591px;
     left: 36.95%;
   }
-  #rec4-t {
+  #homerec4-768 {
     display: block;
     top: 668px;
     left: -10.16%;
   }
+
+  /*
+  DIRECTIONS ===============================================
+  */
+  /* --CONTENT-- */
+  .directions-title {
+    margin: 32px 0px 0px 15%;
+  }
+  .directions-title h1, .directions-title h5 {
+    display: block;
+  }
+  .directions-title h5 {
+    margin-top: 24px;
+    font-weight: 400;
+    max-width: 344px;
+  }
+
+  /* directions cards*/
+  .directions-cards-wrapper {
+    margin-top: 32px;
+  }
+  .directions-cards {
+    left: 108px;
+    right: 108px;
+  }
+  .directions-cards > div {
+    margin-bottom: 32px;
+    padding: 32px;
+  }
+  .directions-text {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .address-click {
+    margin-bottom: 16px;
+  }
+  .address-click h6 {
+    font-size: 12px;
+  }
+
+  .tube h5, .bus h5 {
+    margin-bottom: 16px;
+  }
+
+  /* --BACKGROUND-- */
+  #directionsrec1-768 {
+    display: block;
+    top: -254px;
+    left: 51.95%;
+  }
+  #directionsrec2-768 {
+    display: block;
+    top: 446px;
+    left: 2.34%;
+  }
+  #directionsrec3-768 {
+    display: block;
+    top: 741px;
+    left: 50%;
+  }
 }
 
-
-
-/*
-======
-LAPTOP
-======
-*/
 @media only screen and (min-width: 1024px) {
-  /* NAVIGATION BAR */
-  header {
+  /* --NONE-- */
+  header, #smallh5, #homerec3-768,
+
+  #directionsrec1-768, #directionsrec1-768, #directionsrec2-768, #directionsrec3-768
+  {
     display: none;
   }
 
+  /*
+  HOME =====================================================
+  */
+  /* --NAVIGATION BAR-- */
   nav {
     display: flex;
     justify-content: space-between;
@@ -358,10 +504,9 @@ LAPTOP
     position: relative;
     margin-left: 16px;
   }
-  .navmenu li a {
+  .lightnav li a {
     color: white;
   }
-
   .lightnav li a::after {
     content: "";
     position: absolute;
@@ -372,13 +517,11 @@ LAPTOP
 
     transition: all 0.15s ease;
   }
-
   .lightnav li a:hover::after, .lightnav li a:focus::after, .lightnav li a:active::after {
     right: 0;
   }
 
   .contact-us-light {
-    z-index: 1;
     margin-left: 24px;
 
     color: white;
@@ -397,6 +540,7 @@ LAPTOP
     background-color: white;
   }
 
+  /* social media */
   #yt {
     margin-left: 24px;
   }
@@ -415,11 +559,7 @@ LAPTOP
     transition-duration: 0s;
   }
 
-
-  /* CONTENT */
-  #smallh5 {
-    display: none;
-  }
+  /* --CONTENT-- */
   #largeh5 {
     display: block;
   }
@@ -435,35 +575,138 @@ LAPTOP
 
   #church-image {
     right: -365px;
-    /*left: 54%;*/
     width: 832px;
     height: 358px;
   }
 
-  /* BACKGROUND */
+  /* --BACKGROUND-- */
   #gradient-tablet {
     top: 0;
     right: -60px;
   }
-  #rec5-t {
+  #homerec1-1024 {
     display: block;
     top: 462px;
-    left: 46.29%;
+    left: 48%;
+  }
+
+  /*
+  DIRECTIONS ===============================================
+  */
+  /* --NAVIGATION BAR-- */
+  .darknav li a {
+    color: #5A678E;
+  }
+  .darknav li a::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #5A678E;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+
+    transition: all 0.15s ease;
+  }
+  .darknav li a:hover::after, .darknav li a:focus::after, .darknav li a:active::after {
+    right: 0;
+  }
+
+  .contact-us-dark {
+    margin-left: 24px;
+
+    color: #5A678E;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    border-color: #5A678E;
+    overflow: hidden;
+
+    transition-property: color, background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+  .contact-us-dark:hover, .contact-us-dark:focus, .contact-us-dark:active {
+    color: white;
+    background-color: #5A678E;
+  }
+
+  /* --CONTENT-- */
+  .directions-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .directions-title {
+    margin: 0px 24px 0px 64px;
+  }
+  .directions-title h5 {
+    max-width: 452px;
+  }
+  .directions-title img {
+    display: block;
+    margin-top: 32px;
+
+    width: 100%;
+  }
+
+  .directions-cards-wrapper {
+    justify-content: flex-start;
+    margin-left: 24px;
+    margin-right: 64px;
+
+  }
+  .directions-cards {
+    margin: 0px;
+  }
+
+  .address:hover {
+    transform: scale(1.01) translateY(-1.5px);
+  }
+  .address:active {
+    transform: scale(1) translateY(0px);
+  }
+
+  /* --BACKGROUND-- */
+  #directionsrec1-1024 {
+    display: block;
+    top: -211px;
+    left: 24.28%;
+  }
+  #directionsrec2-1024 {
+    display: block;
+    top: 94px;
+    left: -14.36%;
+  }
+  #directionsrec3-1024 {
+    display: block;
+    top: 612px;
+    left: 63%;
+  }
+  #directionsrec4-1024 {
+    display: block;
+    top: 618px;
+    left: 18.95%;
   }
 }
 
-
-
-/*
-====
-FULL
-====
-*/
 @media only screen and (min-width: 1440px) {
   html {
     overflow-y: hidden;
   }
-  /* NAVIGATION BAR */
+  /* --NONE-- */
+  #gradient-tablet, #homerec1-768, #homerec2-768, #homerec3-768, #homerec4-768, #homerec1-1024,
+
+  #directionsrec1-1024, #directionsrec2-1024, #directionsrec3-1024, #directionsrec4-1024
+  {
+    display: none;
+  }
+
+
+  /*
+  HOME =====================================================
+  */
+  /* --NAVIGATION BAR-- */
   #logotype-dark {
     width: 156px;
     height: 24px;
@@ -478,7 +721,7 @@ FULL
     margin-left: 48px;
   }
 
-  /* CONTENT */
+  /* --CONTENT-- */
   .home-wrapper {
     left: 15%;
 
@@ -494,12 +737,7 @@ FULL
     height: 516px;
   }
 
-
-  /* BACKGROUND */
-  #gradient-tablet, #rec1-t, #rec2-t, #rec3-t, #rec4-t, #rec5-t {
-    display: none;
-  }
-
+  /* --BACKGROUND-- */
   #gradient-full {
     display: block;
     top: 0;
@@ -507,35 +745,83 @@ FULL
     left: 39.0625%;
   }
 
-  #rec1-f {
+  #homerec1-1440 {
     display: block;
     top: 193px;
     left: 41.77%
   }
-  #rec2-f {
+  #homerec2-1440 {
     display: block;
     top: 250px;
     left: 3.8%;
   }
-  #rec3-f {
+  #homerec3-1440 {
     display: block;
     top: 746px;
     left: -18.28%;
   }
-  #rec4-f {
+  #homerec4-1440 {
     display: block;
     top: 840px;
     left: 47.92%;
   }
+
+  /*
+  DIRECTIONS ===============================================
+  */
+  /* --NAVIGATION BAR-- */
+  .contact-us-dark {
+    margin-left: 48px;
+  }
+  /* --CONTENT-- */
+  .directions-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .directions-title {
+    margin: 0px 24px 0px 0px;
+  }
+  .directions-title img {
+    margin-top: 48px;
+  }
+
+  .directions-cards-wrapper {
+    margin: 0px 0px 0px 24px;
+  }
+  .directions-cards {
+    width: 552px;
+  }
+
+  /* --BACKGROUND-- */
+  #directionsrec1-1440 {
+    display: block;
+    top: -164px;
+    left: 31.93%;
+  }
+  #directionsrec2-1440 {
+    display: block;
+    top: 293px;
+    left: 93.85%;
+  }
+  #directionsrec3-1440 {
+    display: block;
+    top: 454px;
+    left: 5.16%;
+  }
+  #directionsrec4-1440 {
+    display: block;
+    top: 762px;
+    left: 63.7%;
+  }
+  #directionsrec5-1440 {
+    display: block;
+    top: 942px;
+    left: 43.91%;
+  }
 }
 
-
-
-/*
-========
-OVERFLOW
-========
-*/
 @media only screen and (min-width: 1920px) {
   .home-wrapper {
     left: 20%;
