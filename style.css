@@ -1,9 +1,8 @@
 /* Rubik font import */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*
-GLOBAL ===================================================
-*/
+/* GLOBAL =================================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -93,14 +92,16 @@ a:visited {text-decoration: none; color: none;}
   /* --NONE-- */
   nav, #church-image, #gradient-tablet, #gradient-full, #homerec1-768, #homerec2-768, #homerec3-768, #homerec4-768, #homerec1-1024, #homerec1-1440, #homerec2-1440, #homerec3-1440, #homerec4-1440,
 
-  .directions-title h1, .directions-title h5, .directions-title img, #directionsrec1-768, #directionsrec2-768, #directionsrec3-768, #directionsrec4-768, #directionsrec1-1024, #directionsrec2-1024, #directionsrec3-1024, #directionsrec4-1024, #directionsrec1-1440, #directionsrec2-1440, #directionsrec3-1440, #directionsrec4-1440, #directionsrec5-1440
+  .directions-title h1, .directions-title h5, .directions-title img, #directionsrec1-768, #directionsrec2-768, #directionsrec3-768, #directionsrec4-768, #directionsrec1-1024, #directionsrec2-1024, #directionsrec3-1024, #directionsrec4-1024, #directionsrec1-1440, #directionsrec2-1440, #directionsrec3-1440, #directionsrec4-1440, #directionsrec5-1440,
+
+  #contact-us-h1large, .contact-us-title h5
   {
     display: none;
   }
 
-  /*
-  HOME =====================================================
-  */
+
+  /* HOME ===================================================== */
+
   /* --HEADING-- */
   #lightmenu-btn img {
     width: 14px;
@@ -226,9 +227,9 @@ a:visited {text-decoration: none; color: none;}
     width: 60%;
   }
 
-  /*
-  DIRECTIONS ===============================================
-  */
+
+  /* DIRECTIONS =============================================== */
+
   /* --HEADING-- */
   #darkmenu-btn img {
     width: 14px;
@@ -317,13 +318,33 @@ a:visited {text-decoration: none; color: none;}
     top: 583px;
     left: 39.47%;
   }
+
+
+  /* CONTACT US =============================================== */
+  /* --BACKGROUND-- */
+  #contactusrec1-375 {
+    top: 95px;
+    left: 43.73%;
+  }
+  #contactusrec2-375 {
+    top: 504px;
+    left: 71.2%;
+
+  }
+  #contactusrec3-375 {
+    top: 608px;
+    left: -124%;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
   /* --NONE-- */
   #church-image-375, #gradient-mobile , #homerec1-375, #homerec2-375, #homerec3-375,
 
-  .directions-title h2, #directionsrec1-375, #directionsrec2-375,#directionsrec3-375
+  .directions-title h2, #directionsrec1-375, #directionsrec2-375,#directionsrec3-375,
+
+  #contactusrec1-375, #contactusrec2-375, #contactusrec3-375
   {
     display: none;
   }
@@ -402,7 +423,7 @@ a:visited {text-decoration: none; color: none;}
   }
   #homerec4-768 {
     display: block;
-    top: 668px;
+    top: 700px;
     left: -10.16%;
   }
 
